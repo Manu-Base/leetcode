@@ -1,13 +1,14 @@
 {
+  "description": "You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\nExample 1:\n\n```\n\n**Input:** l1 = [2,4,3], l2 = [5,6,4]\n**Output:** [7,0,8]\n**Explanation:** 342 + 465 = 807.\n\n```\n\nExample 2:\n\n```\n\n**Input:** l1 = [0], l2 = [0]\n**Output:** [0]\n\n```\n\nExample 3:\n\n```\n\n**Input:** l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\n**Output:** [8,9,9,9,0,0,0,1]\n\n```\n\n**Constraints:**\n\n- The number of nodes in each linked list is in the range `[1, 100]`.\n\n- `0 <= Node.val <= 9`\n\n- It is guaranteed that the list represents a number that does not have leading zeros.",
   "difficulty": "Medium",
-  "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/add-two-numbers/submissions/2130748063/",
-  "memory": "42.2 MB",
+  "language": "python3",
+  "leetCodeUrl": "https://leetcode.com/problems/add-two-numbers/submissions/2130758556/",
+  "memory": "19.2 MB",
   "problemId": 2,
-  "runtime": "0 ms",
+  "runtime": "3 ms",
   "slug": "add-two-numbers",
-  "sourceCode": "class Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        ListNode dummyHead = new ListNode(0);\n        ListNode tail = dummyHead;\n        int carry = 0;\n\n        while (l1 != null || l2 != null || carry != 0) {\n            int digit1 = (l1 != null) ? l1.val : 0;\n            int digit2 = (l2 != null) ? l2.val : 0;\n\n            int sum = digit1 + digit2 + carry;\n            int digit = sum % 10;\n            carry = sum / 10;\n\n            ListNode newNode = new ListNode(digit);\n            tail.next = newNode;\n            tail = tail.next;\n\n            l1 = (l1 != null) ? l1.next : null;\n            l2 = (l2 != null) ? l2.next : null;\n        }\n\n        ListNode result = dummyHead.next;\n        dummyHead.next = null;\n        return result;\n    }\n}",
-  "submittedAt": "2026-09-04T13:42:11.138Z",
+  "sourceCode": "class Solution:\n    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n        \n        dummy = ListNode()\n        res = dummy\n\n        total = carry = 0\n\n        while l1 or l2 or carry:\n            total = carry\n\n            if l1:\n                total += l1.val\n                l1 = l1.next\n            if l2:\n                total += l2.val\n                l2 = l2.next\n            \n            num = total % 10\n            carry = total // 10\n            dummy.next = ListNode(num)\n            dummy = dummy.next\n        \n        return res.next",
+  "submittedAt": "2026-09-04T13:53:24.801Z",
   "testCases": "Case 1:\nStatus: Passed\nInput:\nl1 = [2,4,3]\nl2 = [5,6,4]\nOutput = [7,0,8]\nExpected = [7,0,8]\n\nCase 2:\nStatus: Passed\nInput:\nl1 = [0]\nl2 = [0]\nOutput = [0]\nExpected = [0]\n\nCase 3:\nStatus: Passed\nInput:\nl1 = [9,9,9,9,9,9,9]\nl2 = [9,9,9,9]\nOutput = [8,9,9,9,0,0,0,1]\nExpected = [8,9,9,9,0,0,0,1]",
   "title": "Add Two Numbers",
   "topics": [
@@ -15,7 +16,7 @@
     "Math",
     "Recursion"
   ],
-  "submissionDate": "2026-09-04T13:42:11.138Z",
+  "submissionDate": "2026-09-04T13:53:24.801Z",
   "folderName": "0002-add-two-numbers",
-  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0002-add-two-numbers/solution.java"
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0002-add-two-numbers/solution.py"
 }
