@@ -62,5 +62,19 @@
     ],
     "solvedAt": "2026-09-04T11:12:59.814Z",
     "folderName": "0083-remove-duplicates-from-sorted-list"
+  },
+  {
+    "id": 88,
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "solvedAt": "2026-09-04T11:59:54.396Z",
+    "folderName": "0088-merge-sorted-array"
   }
 ]
