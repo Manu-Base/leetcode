@@ -1,0 +1,20 @@
+{
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/remove-element/submissions/2130730008/",
+  "memory": "42.8 MB",
+  "problemId": 27,
+  "runtime": "0 ms",
+  "slug": "remove-element",
+  "sourceCode": "class Solution {\n    public int removeElement(int[] nums, int val) {\n        int index = 0;\n        for (int i = 0; i < nums.length; i++) {\n            if (nums[i] != val) {\n                nums[index] = nums[i];\n                index++;\n            }\n        }\n        return index;\n    }\n}",
+  "submittedAt": "2026-09-04T13:22:44.840Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [3,2,2,3]\nval = 3\nOutput = 2, nums = [2,2,_,_]\nExpected = 2, nums = [2,2,_,_]\n\nCase 2:\nStatus: Passed\nInput:\nnums = [0,1,2,2,3,0,4,2]\nval = 2\nOutput = 5, nums = [0,1,4,0,3,_,_,_]\nExpected = 5, nums = [0,1,4,0,3,_,_,_]",
+  "title": "Remove Element",
+  "topics": [
+    "Array",
+    "Two Pointers"
+  ],
+  "submissionDate": "2026-09-04T13:22:44.840Z",
+  "folderName": "0027-remove-element",
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0027-remove-element/solution.java"
+}

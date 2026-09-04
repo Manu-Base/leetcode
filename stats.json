@@ -1,23 +1,23 @@
 {
-  "totalSolved": 7,
-  "easy": 7,
+  "totalSolved": 8,
+  "easy": 8,
   "medium": 0,
   "hard": 0,
   "currentStreak": 2,
   "longestStreak": 2,
   "languages": {
-    "java": 4,
+    "java": 5,
     "python3": 3
   },
   "topics": {
-    "Array": 4,
-    "Two Pointers": 4,
+    "Array": 5,
+    "Two Pointers": 5,
     "Linked List": 3,
     "Recursion": 2,
     "Sorting": 2
   },
-  "lastSolved": "2026-09-04T13:14:08.278Z",
+  "lastSolved": "2026-09-04T13:22:44.840Z",
   "monthlySolves": {
-    "2026-09": 7
+    "2026-09": 8
   }
 }

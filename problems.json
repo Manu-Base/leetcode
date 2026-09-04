@@ -52,6 +52,19 @@
     "folderName": "0026-remove-duplicates-from-sorted-array"
   },
   {
+    "id": 27,
+    "title": "Remove Element",
+    "slug": "remove-element",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "solvedAt": "2026-09-04T13:22:44.840Z",
+    "folderName": "0027-remove-element"
+  },
+  {
     "id": 83,
     "title": "Remove Duplicates from Sorted List",
     "slug": "remove-duplicates-from-sorted-list",

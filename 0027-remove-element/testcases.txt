@@ -1,0 +1,15 @@
+Case 1:
+Status: Passed
+Input:
+nums = [3,2,2,3]
+val = 3
+Output = 2, nums = [2,2,_,_]
+Expected = 2, nums = [2,2,_,_]
+
+Case 2:
+Status: Passed
+Input:
+nums = [0,1,2,2,3,0,4,2]
+val = 2
+Output = 5, nums = [0,1,4,0,3,_,_,_]
+Expected = 5, nums = [0,1,4,0,3,_,_,_]
