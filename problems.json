@@ -50,5 +50,17 @@
     ],
     "solvedAt": "2026-09-04T10:36:45.704Z",
     "folderName": "0026-remove-duplicates-from-sorted-array"
+  },
+  {
+    "id": 83,
+    "title": "Remove Duplicates from Sorted List",
+    "slug": "remove-duplicates-from-sorted-list",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Linked List"
+    ],
+    "solvedAt": "2026-09-04T11:12:59.814Z",
+    "folderName": "0083-remove-duplicates-from-sorted-list"
   }
 ]
