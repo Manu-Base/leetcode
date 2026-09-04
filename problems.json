@@ -70,6 +70,21 @@
     "folderName": "0004-median-of-two-sorted-arrays"
   },
   {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming",
+      "Manacher"
+    ],
+    "solvedAt": "2026-09-04T14:24:59.885Z",
+    "folderName": "0005-longest-palindromic-substring"
+  },
+  {
     "id": 21,
     "title": "Merge Two Sorted Lists",
     "slug": "merge-two-sorted-lists",

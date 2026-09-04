@@ -1,0 +1,23 @@
+{
+  "description": "Given a string `s`, return *the longest* *palindromic* *substring* in `s`.\n\nExample 1:\n\n```\n\n**Input:** s = \"babad\"\n**Output:** \"bab\"\n**Explanation:** \"aba\" is also a valid answer.\n\n```\n\nExample 2:\n\n```\n\n**Input:** s = \"cbbd\"\n**Output:** \"bb\"\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 1000`\n\n- `s` consist of only digits and English letters.",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/longest-palindromic-substring/submissions/2130788950/",
+  "memory": "46.6 MB",
+  "problemId": 5,
+  "runtime": "19 ms",
+  "slug": "longest-palindromic-substring",
+  "sourceCode": "class Solution {\n    public String longestPalindrome(String s) {\n        int n = s.length();\n        String res = \"\";\n\n        for(int i = 0;i<n;i++){\n            // Odd length palindrome\n            int st = i,end = i;\n            while(st>=0&&end<n&&s.charAt(st)==s.charAt(end)){\n                st--;\n                end++;\n            }\n            String temp = s.substring(st+1,end);\n            if(temp.length()>res.length())res=temp;\n\n            // Even length palindrome\n            st = i;\n            end = i+1;\n            while(st>=0&&end<n&&s.charAt(st)==s.charAt(end)){\n                st--;\n                end++;\n            }\n            temp = s.substring(st+1,end);\n            if(temp.length()>res.length())res=temp;\n        }\n\n        return res;\n    }\n}",
+  "submittedAt": "2026-09-04T14:24:59.885Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"babad\"\nOutput = \"bab\"\nExpected = \"bab\"\n\nCase 2:\nStatus: Passed\nInput:\ns = \"cbbd\"\nOutput = \"bb\"\nExpected = \"bb\"",
+  "title": "Longest Palindromic Substring",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Manacher"
+  ],
+  "submissionDate": "2026-09-04T14:24:59.885Z",
+  "folderName": "0005-longest-palindromic-substring",
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0005-longest-palindromic-substring/solution.java"
+}
