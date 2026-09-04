@@ -3,9 +3,9 @@
 | Detail | Value |
 | --- | --- |
 | Difficulty | Easy |
-| Language | java |
-| Runtime | 0ms |
-| Memory | 0.00MB |
+| Language | python3 |
+| Runtime | 0 ms |
+| Memory | Memory |
 
 ## Topics
 
@@ -17,5 +17,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/merge-sorted-array/submissions/2130660378/)
-- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0088-merge-sorted-array/solution.java)
+- [LeetCode problem](https://leetcode.com/problems/merge-sorted-array/submissions/2130722184/)
+- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0088-merge-sorted-array/solution.py)

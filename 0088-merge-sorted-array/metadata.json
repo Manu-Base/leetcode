@@ -1,13 +1,13 @@
 {
   "difficulty": "Easy",
-  "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/merge-sorted-array/submissions/2130660378/",
-  "memory": "0.00MB",
+  "language": "python3",
+  "leetCodeUrl": "https://leetcode.com/problems/merge-sorted-array/submissions/2130722184/",
+  "memory": "Memory",
   "problemId": 88,
-  "runtime": "0ms",
+  "runtime": "0 ms",
   "slug": "merge-sorted-array",
-  "sourceCode": "class Solution {\n    public void merge(int[] nums1, int m, int[] nums2, int n) {\n        int i = m - 1;\n        int j = n - 1;\n        int k = m + n - 1;\n        \n        while (j >= 0) {\n            if (i >= 0 && nums1[i] > nums2[j]) {\n                nums1[k--] = nums1[i--];\n            } else {\n                nums1[k--] = nums2[j--];\n            }\n        }\n    }\n}",
-  "submittedAt": "2026-09-04T11:59:54.396Z",
+  "sourceCode": "class Solution(object):\n    def merge(self, nums1, m, nums2, n):\n        i = m - 1\n        j = n - 1\n        k = m + n - 1\n        \n        while j >= 0:\n            if i >= 0 and nums1[i] > nums2[j]:\n                nums1[k] = nums1[i]\n                i -= 1\n            else:\n                nums1[k] = nums2[j]\n                j -= 1\n            k -= 1",
+  "submittedAt": "2026-09-04T13:14:08.278Z",
   "testCases": "Case 1:\nStatus: Passed\nInput:\nnums1 = [1,2,3,0,0,0]\nm = 3\nnums2 = [2,5,6]\nn = 3\nOutput = [1,2,2,3,5,6]\nExpected = [1,2,2,3,5,6]\n\nCase 2:\nStatus: Passed\nInput:\nnums1 = [1]\nm = 1\nnums2 = []\nn = 0\nOutput = [1]\nExpected = [1]\n\nCase 3:\nStatus: Passed\nInput:\nnums1 = [0]\nm = 0\nnums2 = [1]\nn = 1\nOutput = [1]\nExpected = [1]",
   "title": "Merge Sorted Array",
   "topics": [
@@ -15,7 +15,7 @@
     "Two Pointers",
     "Sorting"
   ],
-  "submissionDate": "2026-09-04T11:59:54.396Z",
+  "submissionDate": "2026-09-04T13:14:08.278Z",
   "folderName": "0088-merge-sorted-array",
-  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0088-merge-sorted-array/solution.java"
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0088-merge-sorted-array/solution.py"
 }

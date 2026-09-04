@@ -76,5 +76,19 @@
     ],
     "solvedAt": "2026-09-04T11:59:54.396Z",
     "folderName": "0088-merge-sorted-array"
+  },
+  {
+    "id": 88,
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "difficulty": "Easy",
+    "language": "python3",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "solvedAt": "2026-09-04T13:14:08.278Z",
+    "folderName": "0088-merge-sorted-array"
   }
 ]
