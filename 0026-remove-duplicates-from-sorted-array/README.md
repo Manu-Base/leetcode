@@ -3,7 +3,7 @@
 | Detail | Value |
 | --- | --- |
 | Difficulty | Easy |
-| Language | java |
+| Language | python3 |
 | Runtime | 0 ms |
 | Memory | Memory |
 
@@ -17,5 +17,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2129814453/)
-- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0026-remove-duplicates-from-sorted-array/solution.java)
+- [LeetCode problem](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2130590635/)
+- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0026-remove-duplicates-from-sorted-array/solution.py)

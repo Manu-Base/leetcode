@@ -1,20 +1,20 @@
 {
   "difficulty": "Easy",
-  "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2129814453/",
+  "language": "python3",
+  "leetCodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2130590635/",
   "memory": "Memory",
   "problemId": 26,
   "runtime": "0 ms",
   "slug": "remove-duplicates-from-sorted-array",
-  "sourceCode": "class Solution {\n    public int removeDuplicates(int[] arr) {\n        int i=0;\n        for(int j=1;j<arr.length;j++){\n            if(arr[i]!=arr[j]){\n                i++;\n                arr[i]=arr[j];\n            }\n        }\n        return i+1;\n        \n    }\n}",
-  "submittedAt": "2026-09-03T16:13:23.895Z",
+  "sourceCode": "class Solution:\n    def removeDuplicates(self, nums: List[int]) -> int:\n        i = 1\n\n        for j in range(1, len(nums)):\n            if nums[j] != nums[i - 1]:\n                nums[i] = nums[j]\n                i += 1\n        \n        return i",
+  "submittedAt": "2026-09-04T10:36:45.704Z",
   "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [1,1,2]\nOutput = 2, nums = [1,2,_]\nExpected = 2, nums = [1,2,_]\n\nCase 2:\nStatus: Passed\nInput:\nnums = [0,0,1,1,1,2,2,3,3,4]\nOutput = 5, nums = [0,1,2,3,4,_,_,_,_,_]\nExpected = 5, nums = [0,1,2,3,4,_,_,_,_,_]",
   "title": "Remove Duplicates from Sorted Array",
   "topics": [
     "Array",
     "Two Pointers"
   ],
-  "submissionDate": "2026-09-03T16:13:23.895Z",
+  "submissionDate": "2026-09-04T10:36:45.704Z",
   "folderName": "0026-remove-duplicates-from-sorted-array",
-  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0026-remove-duplicates-from-sorted-array/solution.java"
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0026-remove-duplicates-from-sorted-array/solution.py"
 }
