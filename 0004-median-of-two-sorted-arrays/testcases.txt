@@ -1,0 +1,15 @@
+Case 1:
+Status: Passed
+Input:
+nums1 = [1,3]
+nums2 = [2]
+Output = 2.00000
+Expected = 2.00000
+
+Case 2:
+Status: Passed
+Input:
+nums1 = [1,2]
+nums2 = [3,4]
+Output = 2.50000
+Expected = 2.50000
