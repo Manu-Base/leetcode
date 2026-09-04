@@ -13,6 +13,19 @@
     "folderName": "0021-merge-two-sorted-lists"
   },
   {
+    "id": 21,
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "language": "python3",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "solvedAt": "2026-09-04T11:10:22.572Z",
+    "folderName": "0021-merge-two-sorted-lists"
+  },
+  {
     "id": 26,
     "title": "Remove Duplicates from Sorted Array",
     "slug": "remove-duplicates-from-sorted-array",

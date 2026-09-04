@@ -3,9 +3,10 @@
 | Detail | Value |
 | --- | --- |
 | Difficulty | Easy |
-| Language | java |
+| Language | python3 |
 | Runtime | 0 ms |
-| Memory | Memory |
+| Memory | 19.20
+MB |
 
 ## Topics
 
@@ -17,5 +18,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/merge-two-sorted-lists/submissions/2130595583/)
-- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0021-merge-two-sorted-lists/solution.java)
+- [LeetCode problem](https://leetcode.com/problems/merge-two-sorted-lists/submissions/2130619495/)
+- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0021-merge-two-sorted-lists/solution.py)
