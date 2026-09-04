@@ -1,5 +1,19 @@
 [
   {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "solvedAt": "2026-09-04T13:42:11.138Z",
+    "folderName": "0002-add-two-numbers"
+  },
+  {
     "id": 21,
     "title": "Merge Two Sorted Lists",
     "slug": "merge-two-sorted-lists",
