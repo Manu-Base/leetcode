@@ -3,17 +3,15 @@
 | Detail | Value |
 | --- | --- |
 | Difficulty | Medium |
-| Language | java |
-| Runtime | 72 ms |
-| Memory | 48.2 MB |
+| Language | cpp |
+| Runtime | 0 ms |
+| Memory | 7.8 MB |
 
 ## Description
 
 Given a string `s`, find the length of the **longest** **substring** without duplicate characters.
 
-&nbsp;
-
-Example 1:**
+Example 1:
 
 ```
 
@@ -23,7 +21,7 @@ Example 1:**
 
 ```
 
-Example 2:**
+Example 2:
 
 ```
 
@@ -33,7 +31,7 @@ Example 2:**
 
 ```
 
-Example 3:**
+Example 3:
 
 ```
 
@@ -44,13 +42,10 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 ```
 
-&nbsp;
-
 **Constraints:**
 
-	
-- `0 <= s.length <= 105`
-	
+- `0 <= s.length <= 10^5`
+
 - `s` consists of English letters, digits, symbols and spaces.
 
 ## Topics
@@ -63,5 +58,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2130754774/)
-- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0003-longest-substring-without-repeating-characters/solution.java)
+- [LeetCode problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2130764014/)
+- [GitHub source](https://github.com/Manu-Base/leetcode/blob/main/0003-longest-substring-without-repeating-characters/solution.cpp)

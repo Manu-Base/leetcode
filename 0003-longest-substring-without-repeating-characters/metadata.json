@@ -1,14 +1,14 @@
 {
-  "description": "Given a string `s`, find the length of the **longest** **substring** without duplicate characters.\n\n&nbsp;\n\nExample 1:**\n\n```\n\n**Input:** s = \"abcabcbb\"\n**Output:** 3\n**Explanation:** The answer is \"abc\", with the length of 3. Note that `\"bca\"` and `\"cab\"` are also correct answers.\n\n```\n\nExample 2:**\n\n```\n\n**Input:** s = \"bbbbb\"\n**Output:** 1\n**Explanation:** The answer is \"b\", with the length of 1.\n\n```\n\nExample 3:**\n\n```\n\n**Input:** s = \"pwwkew\"\n**Output:** 3\n**Explanation:** The answer is \"wke\", with the length of 3.\nNotice that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\n\n```\n\n&nbsp;\n\n**Constraints:**\n\n\t\n- `0 <= s.length <= 105`\n\t\n- `s` consists of English letters, digits, symbols and spaces.",
+  "description": "Given a string `s`, find the length of the **longest** **substring** without duplicate characters.\n\nExample 1:\n\n```\n\n**Input:** s = \"abcabcbb\"\n**Output:** 3\n**Explanation:** The answer is \"abc\", with the length of 3. Note that `\"bca\"` and `\"cab\"` are also correct answers.\n\n```\n\nExample 2:\n\n```\n\n**Input:** s = \"bbbbb\"\n**Output:** 1\n**Explanation:** The answer is \"b\", with the length of 1.\n\n```\n\nExample 3:\n\n```\n\n**Input:** s = \"pwwkew\"\n**Output:** 3\n**Explanation:** The answer is \"wke\", with the length of 3.\nNotice that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\n\n```\n\n**Constraints:**\n\n- `0 <= s.length <= 10^5`\n\n- `s` consists of English letters, digits, symbols and spaces.",
   "difficulty": "Medium",
-  "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2130754774/",
-  "memory": "48.2 MB",
+  "language": "cpp",
+  "leetCodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2130764014/",
+  "memory": "7.8 MB",
   "problemId": 3,
-  "runtime": "72 ms",
+  "runtime": "0 ms",
   "slug": "longest-substring-without-repeating-characters",
-  "sourceCode": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int n = s.length();\n        int maxLength = 0;\n        Set<Character> charSet = new HashSet<>();\n        int left = 0;\n        \n        for (int right = 0; right < n; right++) {\n            if (!charSet.contains(s.charAt(right))) {\n                charSet.add(s.charAt(right));\n                maxLength = Math.max(maxLength, right - left + 1);\n            } else {\n                while (charSet.contains(s.charAt(right))) {\n                    charSet.remove(s.charAt(left));\n                    left++;\n                }\n                charSet.add(s.charAt(right));\n            }\n        }\n        \n        return maxLength;\n    }\n}",
-  "submittedAt": "2026-09-04T13:49:21.028Z",
+  "sourceCode": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        int n = s.length();\n        if (n == 0) return 0;\n        int res = 0;\n\n        for (int i = 0; i < n; i++) {\n            // This vector tracks visited characters for the substring starting at 'i'.\n            // It is reset for each new starting position.\n            vector<bool> vis(128, false); // Using 128 for full ASCII support\n            for (int j = i; j < n; j++) {\n                // If the current character has already been seen in this substring\n                if (vis[s[j]]) {\n                    break;\n                }\n                // Otherwise, update the result and mark the character as seen\n                else {\n                    res = max(res, j - i + 1);\n                    vis[s[j]] = true;\n                }\n            }\n        }\n        return res;\n    }\n};",
+  "submittedAt": "2026-09-04T13:59:10.100Z",
   "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"abcabcbb\"\nOutput = 3\nExpected = 3\n\nCase 2:\nStatus: Passed\nInput:\ns = \"bbbbb\"\nOutput = 1\nExpected = 1\n\nCase 3:\nStatus: Passed\nInput:\ns = \"pwwkew\"\nOutput = 3\nExpected = 3",
   "title": "Longest Substring Without Repeating Characters",
   "topics": [
@@ -16,7 +16,7 @@
     "String",
     "Sliding Window"
   ],
-  "submissionDate": "2026-09-04T13:49:21.028Z",
+  "submissionDate": "2026-09-04T13:59:10.100Z",
   "folderName": "0003-longest-substring-without-repeating-characters",
-  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0003-longest-substring-without-repeating-characters/solution.java"
+  "githubUrl": "https://github.com/Manu-Base/leetcode/blob/main/0003-longest-substring-without-repeating-characters/solution.cpp"
 }

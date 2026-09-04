@@ -42,6 +42,20 @@
     "folderName": "0003-longest-substring-without-repeating-characters"
   },
   {
+    "id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "language": "cpp",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "solvedAt": "2026-09-04T13:59:10.100Z",
+    "folderName": "0003-longest-substring-without-repeating-characters"
+  },
+  {
     "id": 21,
     "title": "Merge Two Sorted Lists",
     "slug": "merge-two-sorted-lists",
