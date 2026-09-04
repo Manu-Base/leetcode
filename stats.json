@@ -1,12 +1,12 @@
 {
-  "totalSolved": 10,
+  "totalSolved": 11,
   "easy": 9,
-  "medium": 1,
+  "medium": 2,
   "hard": 0,
   "currentStreak": 2,
   "longestStreak": 2,
   "languages": {
-    "java": 7,
+    "java": 8,
     "python3": 3
   },
   "topics": {
@@ -15,11 +15,13 @@
     "Linked List": 4,
     "Recursion": 3,
     "Sorting": 2,
-    "String": 1,
-    "Math": 1
+    "String": 2,
+    "Math": 1,
+    "Hash Table": 1,
+    "Sliding Window": 1
   },
-  "lastSolved": "2026-09-04T13:42:11.138Z",
+  "lastSolved": "2026-09-04T13:49:21.028Z",
   "monthlySolves": {
-    "2026-09": 10
+    "2026-09": 11
   }
 }

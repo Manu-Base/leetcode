@@ -1,0 +1,20 @@
+Case 1:
+Status: Passed
+Input:
+s = "abcabcbb"
+Output = 3
+Expected = 3
+
+Case 2:
+Status: Passed
+Input:
+s = "bbbbb"
+Output = 1
+Expected = 1
+
+Case 3:
+Status: Passed
+Input:
+s = "pwwkew"
+Output = 3
+Expected = 3
